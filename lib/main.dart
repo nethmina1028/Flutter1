@@ -45,9 +45,8 @@ class MyApp extends StatelessWidget {
 }
 
   */
-   
 
-    /*  2nd example
+/*  2nd example
 
   import 'package:flutter/material.dart';
 
@@ -215,6 +214,8 @@ void main(){
 
   */
 
+/*
+
   import 'package:flutter/material.dart';
 
 void main(){
@@ -251,7 +252,8 @@ void main(){
                   children: [
                     Text("Flutter is open Source",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
 
-                    Text("kfnddjffjfdjd jfdsnfjdsdjddvjsvdsvjds svsjdv dsvsd vsdvd vdv dsvdjvsdvndsvdssdjv ssdvd vdv dsvdsjv sdvdjvvsdjvdsjvvjvnsdv sjvjvv sbfvbbkbfdbnfdkbbnfkbdkbf grngrggnsg",style: 
+                    Text("kfnddjffjfdjd jfdsnfjdsdjddvjsvdsvjds svsjdv dsvsd vsdvd vdv dsvdjvsdvndsvdssdjv ssdvd vdv dsvdsjv sdvdjvvsdjvdsjvvjvnsdv sjvjvv sbfvbbkbfdbnfdkbbnfkbdkbf grngrggnsg",
+                    style: 
                 TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -324,7 +326,91 @@ void main(){
           ),
 
         ),
+  
       );
     }
   }
 
+  */
+
+/* single child scorll 
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Container(
+                
+                  height: 1750,
+                  color: Colors.red,
+                  width: double.infinity,
+                  child:const Column(
+                    children: [
+                      Text("Futter us open",style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                      Text("fsdifdisdfnfdsnfdsfdsjds sdfdsj fdsjfndd fdsjdfndfnsdfv sdvsjvdsvsdn vdsjvndsdvs",style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      
+                      ),
+                      ),
+                      Row(
+                       children: [
+                        
+                       ],
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+*/
+
+import 'package:flutter/material.dart';
+import 'package:hello/pages/home_page.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
+  }
+}
